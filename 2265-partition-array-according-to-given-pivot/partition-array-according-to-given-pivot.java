@@ -17,6 +17,10 @@ class Solution {
                 list.add(num2);
             }
         }
-        return list.stream().mapToInt(Integer::intValue).toArray();
+        int[] res=new int[n];
+       for(int i=0;i<list.size();i++){
+             res[i]=list.get(i);
+       }
+       return res;
     }
 }
