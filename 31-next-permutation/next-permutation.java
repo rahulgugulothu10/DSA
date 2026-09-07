@@ -12,7 +12,7 @@ class Solution {
             rev(nums,0,n-1);
             return;
         }
-        for(int i=n-1;i>=i;i--){
+        for(int i=n-1;i>=ind;i--){
            if(nums[i]>nums[ind]){
             swap(nums,i,ind);
             break;
